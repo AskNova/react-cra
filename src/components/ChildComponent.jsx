@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ChildComponent = ({name = 'Unknown', age = '0'}) => {
+const ChildComponent = ({name = 'Unknown', age = '0', handleClick }) => {
   // Destructuring Props
   // const { name, age } = props;
   return (
     <div>
       <p>Name: {name}</p>
       <p>Age: {age}</p>
+      <button onClick={() => handleClick && handleClick("Hello!!!")}>Click Me</button>
     </div>
   );
 };
