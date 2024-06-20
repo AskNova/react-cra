@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const ChildComponent = (props) => {
+const ChildComponent = ({name , age}) => {
+  // Destructuring Props
+  // const { name, age } = props;
   return (
     <div>
-      <p>Name:{props.name}</p>
-      <p>Age:{props.age}</p>
+      <p>Name:{name}</p>
+      <p>Age:{age}</p>
     </div>
-  )
-}
+  );
+};
 
-export default ChildComponent
+export default ChildComponent;
