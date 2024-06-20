@@ -5,10 +5,15 @@ const ChildComponent = ({name , age}) => {
   // const { name, age } = props;
   return (
     <div>
-      <p>Name:{name}</p>
-      <p>Age:{age}</p>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
     </div>
   );
+};
+
+ChildComponent.defaultProps = {
+    name: 'Unknown',
+    age: 0,
 };
 
 export default ChildComponent;

@@ -6,6 +6,7 @@ const ParentComponent = () => {
     <div>
       <ChildComponent name="Alex" age="18" />
       <ChildComponent name="Jhon" age="20" />
+      <ChildComponent />
     </div>
   );
 };
