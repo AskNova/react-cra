@@ -10,4 +10,6 @@ const ParentComponent = () => {
   );
 };
 
-export default ParentComponent;
+const Hello = () => <h3>Hello</h3>;
+
+export  { ParentComponent, Hello };
