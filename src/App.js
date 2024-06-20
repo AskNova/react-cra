@@ -1,9 +1,12 @@
 import './App.css';
+import Heading from './components/Heading';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
-      <h1> Hello </h1>
+      <Heading heading="Hello Heading!" />
+      <ParentComponent />
     </div>
   );
 }
