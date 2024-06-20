@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const ChildComponent = ({name = 'Unknown', age = '0'}) => {
   // Destructuring Props
@@ -15,5 +16,10 @@ const ChildComponent = ({name = 'Unknown', age = '0'}) => {
 //     name: 'Unknown',
 //     age: 0,
 // };
+
+ChildComponent.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+};
 
 export default ChildComponent;

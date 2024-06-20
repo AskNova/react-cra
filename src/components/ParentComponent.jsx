@@ -7,6 +7,7 @@ const ParentComponent = () => {
       <ChildComponent name="Alex" age="18" />
       <ChildComponent name="Jhon" age="20" />
       <ChildComponent />
+      <ChildComponent name = {4} age="Eighteen" />
     </div>
   );
 };
