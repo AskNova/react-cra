@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChildComponent = ({name , age}) => {
+const ChildComponent = ({name = 'Unknown', age = '0'}) => {
   // Destructuring Props
   // const { name, age } = props;
   return (
@@ -11,9 +11,9 @@ const ChildComponent = ({name , age}) => {
   );
 };
 
-ChildComponent.defaultProps = {
-    name: 'Unknown',
-    age: 0,
-};
+// ChildComponent.defaultProps = {
+//     name: 'Unknown',
+//     age: 0,
+// };
 
 export default ChildComponent;
